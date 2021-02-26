@@ -89,7 +89,10 @@ function App({ switchTheme, reducer, langReducer }) {
 
             <div className="text-center mt-5">
               <p className="text-muted m-0">
-                Created by <strong>Kalmbik61</strong>
+                Created by{" "}
+                <strong>
+                  <a href="https://www.instagram.com/kalmbik61">Kalmbik61</a>
+                </strong>
               </p>
             </div>
           </main>

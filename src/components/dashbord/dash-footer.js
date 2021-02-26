@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
+import NightsStayIcon from "@material-ui/icons/NightsStay";
 
 const IOSSwitch = withStyles((theme) => ({
   root: {
@@ -80,7 +81,7 @@ function CustomizedSwitches({ switchTheme }) {
             name="Night"
           />
         }
-        label="Night mode"
+        label={<NightsStayIcon />}
       />
     </FormGroup>
   );
