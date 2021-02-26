@@ -1,0 +1,20 @@
+.price {
+  color: #54b689;
+  font-size: 30px;
+}
+.service {
+  font-size: 20px;
+}
+
+@media (max-width: 425px) {
+  .price {
+    font-size: 20px;
+  }
+  .service {
+    font-size: 15px;
+  }
+}
+
+.table {
+  color: inherit !important;
+}

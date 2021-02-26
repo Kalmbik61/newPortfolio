@@ -1,0 +1,30 @@
+.list-unstyled li {
+  margin-bottom: 5px;
+}
+.list-unstyled li a {
+  color: rgb(124, 124, 124);
+  font-size: 14px;
+}
+
+.list-unstyled li svg {
+  margin-right: 5px;
+}
+.resume_name {
+  font-size: 1.75rem;
+  letter-spacing: 0.1rem;
+}
+.item_work_descr,
+.skills_list ul li,
+.lang_list ul li,
+.interests_list ul li {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .list-unstyled li {
+    font-size: 10px !important;
+  }
+  .contacts_wrapper {
+    padding: 0 !important;
+  }
+}

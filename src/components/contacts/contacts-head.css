@@ -1,0 +1,17 @@
+.contacts_icons a svg {
+  font-size: 30px;
+}
+
+.whats {
+  color: rgb(0, 161, 0) !important;
+}
+
+.teleg {
+  color: rgb(30, 106, 206) !important;
+}
+
+.url_hover:hover,
+.url_hover:active {
+  color: #337a5a;
+  text-decoration: underline !important;
+}

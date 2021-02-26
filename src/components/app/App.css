@@ -1,0 +1,10 @@
+a {
+  color: inherit;
+}
+
+.green_link {
+  color: #43a076;
+}
+.green_link:hover {
+  color: #fff;
+}

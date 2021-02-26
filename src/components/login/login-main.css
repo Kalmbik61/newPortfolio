@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.wrapper_title h4,
+.wrapper_login input,
+.wrapper_login h5,
+.wrapper_password input,
+.wrapper_password h5,
+.btn_form {
+  font-family: "Poppins", sans-serif;
+}
+
+.img_bg {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.wrapper {
+  height: 80vh;
+  align-items: center;
+  align-content: center;
+}
+
+.wrapper_img,
+.wrapper_form {
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper_img img {
+  width: 500px;
+}
+
+.wrapper_avatar img {
+  width: 100px;
+}
+
+.wrapper_form form {
+  width: 360px;
+}
+form h4 {
+  text-transform: uppercase;
+  color: inherit;
+}
+.wrapper_login,
+.wrapper_password {
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+.i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.i i {
+  color: #d9d9d9;
+}
+
+.wrapper_login,
+.wrapper_password {
+  position: relative;
+  height: 45px;
+}
+
+.wrapper_login:after,
+.wrapper_password:after,
+.wrapper_login:before,
+.wrapper_password:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #43a076;
+  transition: 0.3s;
+}
+.wrapper_login:after,
+.wrapper_password:after {
+  right: 50%;
+}
+
+.wrapper_login:before,
+.wrapper_password:before {
+  left: 50%;
+}
+.wrapper_login h5,
+.wrapper_password h5 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d9d9d9;
+  font-display: 18px;
+  transition: 0.3s;
+}
+
+.password input,
+.login input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 15px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.btn_form {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #43a076, #32be32, #43a076);
+  color: #fff;
+  background-size: 200%;
+  transition: 0.5s;
+}
+.btn_form:hover {
+  background-position: right;
+}
+
+.focus i {
+  color: #43a076;
+}
+
+.focus h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.wrapper_login.focus:after,
+.wrapper_password.focus:after,
+.wrapper_login.focus:before,
+.wrapper_password.focus:before {
+  width: 50%;
+}
+
+@media (max-width: 425px) {
+  .wrapper_img {
+    display: none;
+  }
+  .wrapper_form form {
+    width: 100%;
+  }
+}

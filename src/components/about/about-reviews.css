@@ -1,0 +1,11 @@
+.card-list {
+  margin-bottom: 1rem;
+}
+
+.btn_portfolio {
+  margin: 3rem;
+}
+.card_img img {
+  width: 100%;
+  border-radius: 5px;
+}
