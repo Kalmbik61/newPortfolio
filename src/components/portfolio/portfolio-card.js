@@ -12,11 +12,11 @@ export default function PortfolioCard({ imgs, title, text, link, id }) {
           <h3 className="descr_title">{title}</h3>
           <ul className="card-text">
             {text.map((text) => {
-              return <li key={id + Math.random() * 100}>{text}</li>;
+              return <li key={id * Math.random() * 900 + 900}>{text}</li>;
             })}
           </ul>
           <p className="card-text">
-            <small className="text-muted"> Website: </small>
+            <small className="text-muted font-weight-bold"> Website: </small>
             <small className="text-muted">
               <a href={link}>{link}</a>
             </small>

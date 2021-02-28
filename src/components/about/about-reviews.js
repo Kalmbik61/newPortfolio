@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import { Link } from "react-router-dom";
@@ -6,18 +6,25 @@ import AboutReviewCard from "./about-review-card";
 
 import "./about-reviews.css";
 
-const About_rewiews = ({ data }) => {
-  const { title, reviews, portfolioBtn } = data;
+const About_rewiews = ({ data, imgs }) => {
+  const { title, portfolioBtn } = data;
+  const [shortReviews, setShortReviews] = useState([]);
+
+  useEffect(() => {
+    // сохраняем иммутабельность
+    const reviews = imgs.slice(0);
+    const reverse = reviews.reverse();
+    const short = reverse.slice(0, 4);
+    setShortReviews(short);
+  }, []);
   return (
     <>
       <div className="mb-5">
         <h3 className="section-title font-weight-bold m-3">{title}</h3>
       </div>
       <div className="reviews_wrapper row justify-content-around">
-        {reviews.map((rev) => {
-          return (
-            <AboutReviewCard key={rev.id} title={rev.title} img={rev.img} />
-          );
+        {shortReviews.map((rev) => {
+          return <AboutReviewCard key={rev.id} data={rev} />;
         })}
       </div>
       <div className="btn_portfolio text-center">

@@ -11,7 +11,7 @@ const TablePrice = ({ data }) => {
           return (
             <tr key={id}>
               <td className="col-auto p-4 font-weight-bold service">{title}</td>
-              <td className="col-2 p-4">
+              <td className="col-4 p-4">
                 от{" "}
                 <span className="font-weight-bold price">
                   {numberWithSpaces(price)}

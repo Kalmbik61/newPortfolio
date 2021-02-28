@@ -2,17 +2,21 @@
   padding: 1rem;
   box-shadow: 0 0 5px 0 black;
   border-radius: 0.5rem;
+  /* height: 340px; */
 }
 .card_content {
   margin-left: 0 !important;
   margin-right: 0 !important;
+  height: 100%;
 }
-.card_carousel {
+.card_carousel,
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
   height: 100%;
 }
 .carousel-item img {
-  height: 100%;
-  width: 100%;
   border-radius: 5px;
   object-fit: cover;
 }
@@ -22,11 +26,17 @@
   justify-content: center;
 }
 @media (max-width: 1024px) {
+  .card_wrapper {
+    height: 350px;
+  }
   .card_descr {
     padding: 10px !important;
   }
 }
 @media (max-width: 768px) {
+  .card_wrapper {
+    height: max-content;
+  }
   .card_descr {
     margin-top: 0.5rem;
   }

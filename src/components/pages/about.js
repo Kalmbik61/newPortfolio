@@ -16,7 +16,10 @@ const About = () => {
       <Divider />
       <About_main data={textRu.about.skillsBlock} />
       <Divider />
-      <About_reviews data={textRu.about.reviewsBlock} />
+      <About_reviews
+        data={textRu.about.reviewsBlock}
+        imgs={textRu.portfolio.arr}
+      />
       <Divider />
       <About_howWorkDo data />
       <Divider />

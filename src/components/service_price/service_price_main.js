@@ -10,7 +10,9 @@ const Service_price_main = ({ data, subTitle }) => {
         <small className="text-secondary">{ReactHtmlParser(subTitle)}</small>
       </div>
       <div className="table_price">
-        <h3 className="display-5 text-center mb-4"></h3>
+        <h3 className="display-5 text-center mb-4">
+          {data.websitesTable.mainTitle}
+        </h3>
         <TablePrice data={data.websitesTable.dataService} />
       </div>
       <div className="tilda mt-3">
@@ -18,6 +20,9 @@ const Service_price_main = ({ data, subTitle }) => {
         <TablePrice data={data.tilda.dataService} />
       </div>
       <div className="SMM mt-3">
+        <h4 className="display-5 text-center mb-3 text-muted">
+          {data.instagram.additionalServices}
+        </h4>
         <h3 className="display-5 text-center mb-3">
           {data.instagram.mainTitle}
         </h3>

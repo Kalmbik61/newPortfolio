@@ -1,5 +1,4 @@
 import logo from "../images/IMG_2158.jpeg";
-import laiswood from "../images/laiswood/laiswood.png";
 import tilda from "../images/logo_tilda_black.svg";
 
 //PORTFOLIO
@@ -8,6 +7,48 @@ import l2 from "../images/laiswood/l2.png";
 import l3 from "../images/laiswood/l3.png";
 import l4 from "../images/laiswood/l4.png";
 import l5 from "../images/laiswood/laiswood.png";
+
+import creditCalc from "../images/credit.png";
+
+import dat1 from "../images/dattebayo/d1.png";
+import dat2 from "../images/dattebayo/d2.png";
+import dat3 from "../images/dattebayo/d3.png";
+import dat4 from "../images/dattebayo/d4.png";
+import dat5 from "../images/dattebayo/d5.png";
+import dat from "../images/dattebayo/dattebayo.png";
+
+import sochi1 from "../images/sochi/s1.png";
+import sochi2 from "../images/sochi/s2.png";
+import sochi3 from "../images/sochi/s3.png";
+import sochi4 from "../images/sochi/s4.png";
+
+import cyber from "../images/cyber/cyber.png";
+import cyber1 from "../images/cyber/ca1.png";
+import cyber2 from "../images/cyber/ca2.png";
+import cyber3 from "../images/cyber/ca3.png";
+import cyber4 from "../images/cyber/ca4.png";
+
+import got from "../images/got/got2.png";
+import got1 from "../images/got/got3.png";
+
+import timber from "../images/timber/timber.png";
+import tim1 from "../images/timber/tim1.png";
+import tim2 from "../images/timber/tim2.png";
+import tim3 from "../images/timber/tim3.png";
+import tim4 from "../images/timber/tim4.png";
+import tim5 from "../images/timber/tim5.png";
+import tim6 from "../images/timber/tim6.png";
+import tim7 from "../images/timber/tim7.png";
+import tim8 from "../images/timber/tim8.png";
+import tim9 from "../images/timber/tim9.png";
+
+import ameli from "../images/ameli/ameli.png";
+import a1 from "../images/ameli/a1.png";
+import a2 from "../images/ameli/a2.png";
+import a3 from "../images/ameli/a3.png";
+
+import w1 from "../images/wildberries/w1.png";
+import w2 from "../images/wildberries/w2.png";
 
 const initialState = {
   lang: "RU",
@@ -48,8 +89,8 @@ const initialState = {
       head: {
         title: "Евгений Переверзев",
         subTitle: "Frontend Developer",
-        text: `Я веб разработчик, который пециализируется на фронтенде. Хотите чтобы я помог 
-        Вам с вашим проектом? Вы можете посмотреть мое портфолио и онлайн резюме.`,
+        text: `Я веб разработчик, который пециализируется на фронтенде. Начал осваивать Web-разработку в январе 2020 года. В данный момент подрабатываю на фрилансе, помогаю другим людям реализовывать их идеи.
+        Хотите чтобы я помог Вам с вашим проектом? Посетите мое портфолио, онлайн резюме и свяжитесь со мной удобным для Вас способом.`,
         logo,
         btns: {
           portfolioBtn: "Портфолио",
@@ -134,81 +175,39 @@ const initialState = {
       },
       reviewsBlock: {
         title: "Немного моих проектов",
-        reviews: [
-          {
-            id: 1,
-            title: "Carpentry workshops Layswood",
-            img: laiswood,
-          },
-          {
-            id: 2,
-            title: "Carpentry workshops Layswood",
-            img: laiswood,
-          },
-          {
-            id: 3,
-            title: "Carpentry workshops Layswood",
-            img: laiswood,
-          },
-          {
-            id: 4,
-            title: "Carpentry workshops Layswood",
-            img: laiswood,
-          },
-        ],
         portfolioBtn: "Смотреть портфолио",
       },
-      howIWork: {
-        title: "Как я работаю:",
-        howList: [{ id: 1, text: "111" }],
-        reviewsTextLink: {
-          text: "Если Вам нравится моя работа - оцените меня по данной",
-          revLink: "111",
-        },
-      },
+      // howIWork: {
+      //   title: "Как я работаю:",
+      //   howList: [{ id: 1, text: "111" }],
+      //   reviewsTextLink: {
+      //     text: "Если Вам нравится моя работа - оцените меня по данной",
+      //     revLink: "111",
+      //   },
+      // },
     },
     portfolio: {
       head: {
         title: "Портфолио",
-        subTitle: `Добро пожаловать в мое онлайн портфолио.В данную рубрику попадают в основном средние и крупные прокеты в 
-        которых я принимал участие или создавал самостоятельно (есть проекты, выполненные во время учебы). Хотите
-        чтобы я помог Вам в реализации вашего проекта ?`,
+        subTitle: `Добро пожаловать в мое онлайн портфолио.В данную рубрику попадают все проекты, в которых я принимал 
+        участие(в т.ч. учебные). Хотите чтобы я помог Вам в реализации вашего проекта ?`,
         portfolioBtn: "Напишите мне",
       },
       arr: [
         {
           imgs: [
             {
-              img: l1,
-              id: Math.floor(Math.random() * 100),
-            },
-            {
-              img: l2,
-              id: Math.floor(Math.random() * 1020),
-            },
-            {
-              img: l3,
-              id: Math.floor(Math.random() * 1030),
-            },
-            {
-              img: l4,
-              id: Math.floor(Math.random() * 1010),
-            },
-            {
-              img: l5,
-              id: Math.floor(Math.random() * 1010),
+              img: creditCalc,
+              id: 15345,
             },
           ],
-          id: Math.floor(Math.random() * 1010),
-          title: "Carpentry Workshop Laiswood",
+          id: 134535,
+          title: "Credit Calculator",
           text: [
-            `Был доработан сайт для столярной мастерсой, который незавершил
-           бывший разработчик;`,
-            `Добавлены различные новые эелменты;`,
-            `Создана новая галерея;`,
-            `Добавлена 3D карусель для главного экранаю`,
+            `Разработка кредитного калькулятора на Vanilla JS;`,
+            `Сверстан с помощью Bulma.`,
           ],
-          link: "https://www.laiswood-workshop.ru",
+          link: "отсутствует или более недоступен",
         },
         {
           imgs: [
@@ -233,7 +232,7 @@ const initialState = {
               id: Math.floor(Math.random() * 1010),
             },
           ],
-          id: Math.floor(Math.random() * 100),
+          id: 2,
           title: "Carpentry Workshop Laiswood",
           text: [
             `Был доработан сайт для столярной мастерсой, который незавершил
@@ -247,70 +246,221 @@ const initialState = {
         {
           imgs: [
             {
-              img: l1,
+              img: dat,
+              id: Math.floor(Math.random() * 1010),
+            },
+            {
+              img: dat1,
               id: Math.floor(Math.random() * 100),
             },
             {
-              img: l2,
+              img: dat2,
               id: Math.floor(Math.random() * 1020),
             },
             {
-              img: l3,
+              img: dat3,
               id: Math.floor(Math.random() * 1030),
             },
             {
-              img: l4,
+              img: dat4,
               id: Math.floor(Math.random() * 1010),
             },
             {
-              img: l5,
+              img: dat5,
               id: Math.floor(Math.random() * 1010),
             },
           ],
-          id: Math.floor(Math.random() * 100),
-          title: "Carpentry Workshop Laiswood",
+          id: 3345345,
+          title: "Интернет-магазин на Tilda",
           text: [
-            `Был доработан сайт для столярной мастерсой, который незавершил
-           бывший разработчик;`,
-            `Добавлены различные новые эелменты;`,
-            `Создана новая галерея;`,
-            `Добавлена 3D карусель для главного экранаю`,
+            `Разработан интернет-магазин на тему Аниме;`,
+            `Связаны CRM и API telegram;`,
+            `Создан instagram-аккаунт и аккаунт в Faсebook;`,
+            `Ведение магазина, instagram-аккаунта и настройка рекламы в течении 2 месяцев;`,
           ],
-          link: "https://www.laiswood-workshop.ru",
+          link: "отсутствует или более недоступен",
         },
         {
           imgs: [
             {
-              img: l1,
+              img: sochi1,
               id: Math.floor(Math.random() * 100),
             },
             {
-              img: l2,
+              img: sochi2,
               id: Math.floor(Math.random() * 1020),
             },
             {
-              img: l3,
+              img: sochi3,
               id: Math.floor(Math.random() * 1030),
             },
             {
-              img: l4,
+              img: sochi4,
+              id: Math.floor(Math.random() * 1010),
+            },
+          ],
+          id: 12212,
+          title: "Верстка сайта для услуг кейтеринга в г.Сочи",
+          text: [
+            `Сайт разработан с помощью React, bootstrap, React Router;`,
+            `Сверстан в соответствии с макетом из Figma;`,
+            `Заказчику переданы все исходники сайта вместе со всеми зависимостями.`,
+          ],
+          link: "отсутствует или более недоступен",
+        },
+        {
+          imgs: [
+            {
+              img: cyber,
+              id: Math.floor(Math.random() * 100),
+            },
+            {
+              img: cyber1,
+              id: Math.floor(Math.random() * 1020),
+            },
+            {
+              img: cyber2,
+              id: Math.floor(Math.random() * 1030),
+            },
+            {
+              img: cyber3,
               id: Math.floor(Math.random() * 1010),
             },
             {
-              img: l5,
+              img: cyber4,
               id: Math.floor(Math.random() * 1010),
             },
           ],
-          id: Math.floor(Math.random() * 100),
-          title: "Carpentry Workshop Laiswood",
+          id: 4544,
+          title: "Верстка сайта киберарены на Tilda",
           text: [
-            `Был доработан сайт для столярной мастерсой, который незавершил
-           бывший разработчик;`,
-            `Добавлены различные новые эелменты;`,
-            `Создана новая галерея;`,
-            `Добавлена 3D карусель для главного экранаю`,
+            `Сверстан полностью из Zero-блоков с добавлением стороннего кода;`,
+            `Добавлена анимация;`,
+            `Прописано первичное SEO;`,
+            `Подключены формы к telegram.`,
           ],
-          link: "https://www.laiswood-workshop.ru",
+          link: "http://cyberarenastorm.ru/",
+        },
+        {
+          imgs: [
+            {
+              img: got,
+              id: Math.floor(Math.random() * 100),
+            },
+            {
+              img: got1,
+              id: Math.floor(Math.random() * 1020),
+            },
+          ],
+          id: 1231321,
+          title: `Небольшая БД по сериалу "Игра престолов" на React.Js`,
+          text: [
+            `Разработан в рамках обучающего проекта с применением React.js и Ferch API;`,
+            `В работе использован сервис "API of Ice And Fire".`,
+          ],
+          link: "отсутствует или более недоступен",
+        },
+        {
+          imgs: [
+            {
+              img: timber,
+              id: Math.floor(Math.random() * 100),
+            },
+            {
+              img: tim1,
+              id: Math.floor(Math.random() * 1020),
+            },
+            {
+              img: tim2,
+              id: Math.floor(Math.random() * 1030),
+            },
+            {
+              img: tim3,
+              id: Math.floor(Math.random() * 1010),
+            },
+            {
+              img: tim4,
+              id: Math.floor(Math.random() * 1010),
+            },
+            {
+              img: tim5,
+              id: Math.floor(Math.random() * 1010),
+            },
+            {
+              img: tim6,
+              id: Math.floor(Math.random() * 1010),
+            },
+            {
+              img: tim7,
+              id: Math.floor(Math.random() * 1010),
+            },
+            {
+              img: tim8,
+              id: Math.floor(Math.random() * 1010),
+            },
+            {
+              img: tim9,
+              id: Math.floor(Math.random() * 1010),
+            },
+          ],
+          id: 9890,
+          title: "Интеграция калькуляторов на сайт Tilda",
+          text: [
+            `Сверстаны калькуляторы на HTML/CSS;`,
+            `Интегрированы на сайт Tilda посредством добавления скриптов;`,
+            `Форма заказа связана с калькуляторами, что позволяет принимать заказы через CRM (т.е. без потери стандартных 
+              настроек сайта)`,
+          ],
+          link: "https://timberdesign.ru/",
+        },
+        {
+          imgs: [
+            {
+              img: ameli,
+              id: Math.floor(Math.random() * 100),
+            },
+            {
+              img: a2,
+              id: Math.floor(Math.random() * 1020),
+            },
+            {
+              img: a1,
+              id: Math.floor(Math.random() * 1030),
+            },
+            {
+              img: a3,
+              id: Math.floor(Math.random() * 1010),
+            },
+          ],
+          id: 1203435,
+          title:
+            "Изменение стандартной работы корзины и карточек товара в Tilda",
+          text: [
+            `В интернет-магазина на платформе Tilda добавлен JS код, который добавляет "см" и крастность при 
+            увеличении количества товара;`,
+            `Все стандартные функции платформы сохранены.`,
+          ],
+          link: "https://amelie.su/",
+        },
+        {
+          imgs: [
+            {
+              img: w1,
+              id: Math.floor(Math.random() * 100),
+            },
+            {
+              img: w2,
+              id: Math.floor(Math.random() * 1020),
+            },
+          ],
+          id: 5678493,
+          title: "Расширение для анализа продаж на Wildberries",
+          text: [
+            `Расширение сверстано в соответствии с макетом из Figma на bootstrap 4;`,
+            `Прописана логика на Vanilla Js;`,
+            `Расширение дорабатывается и будет переписываться на React.js;`,
+          ],
+          link: "отсутствует или более недоступен",
         },
       ],
     },
@@ -386,6 +536,7 @@ const initialState = {
             ],
           },
           instagram: {
+            additionalServices: "Дополнительные услуги",
             mainTitle: "Instagram",
             dataService: [
               {
@@ -583,7 +734,8 @@ const initialState = {
               date_from: "Декабрь 2020",
               date_to: "Декабрь 2020",
               work_type: "Фриланс",
-              about: `Изменена кратность товаров и шаг добавления товара в корзину путем добавления стороннего кода на Vanilla JS.`,
+              about: `Изменена кратность товаров, шаг добавления товара в корзину и добавление надписи "см" путем 
+              добавления стороннего кода на Vanilla JS.`,
             },
             {
               id: 1231123,
@@ -605,16 +757,6 @@ const initialState = {
               Добавление кастомных анимаций, карт с точками присутствия и контактной информацией,
               формами обратной связи через Telegram.`,
             },
-
-            {
-              id: 3,
-              title: "Интернет магазин на платформе Tilda",
-              date_from: "Июнь 2020",
-              date_to: "Август 2020",
-              work_type: "Фриланс",
-              about: `Разработка дизайна проекта для интернет-магазина. Полное ведение и 
-              администрирование проекта. Ведение instagram магазина, smm продвижение.`,
-            },
             {
               id: 4,
               title: "Сайт для услуг кейтеринга в г.Сочи",
@@ -623,6 +765,15 @@ const initialState = {
               work_type: "Фриланс",
               about: `Разработан проект с 0 с применением React+bootstrap+router. Разработана форма обратной 
               связи и корзина заказов. А так же мини-слайдеры и меню. В данный момент проект заморожен.`,
+            },
+            {
+              id: 3,
+              title: "Интернет магазин на платформе Tilda",
+              date_from: "Июнь 2020",
+              date_to: "Август 2020",
+              work_type: "Фриланс",
+              about: `Разработка дизайна проекта для интернет-магазина. Полное ведение и 
+              администрирование проекта. Ведение instagram магазина, smm продвижение.`,
             },
             {
               id: 5,
