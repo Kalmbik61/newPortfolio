@@ -2,6 +2,9 @@ import React from "react";
 import TablePrice from "./tablePrice";
 import ReactHtmlParser from "react-html-parser";
 import "./service_price_main.css";
+import { Button } from "react-bootstrap";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import { Link } from "react-router-dom";
 
 const Service_price_main = ({ data, subTitle }) => {
   return (
@@ -19,7 +22,15 @@ const Service_price_main = ({ data, subTitle }) => {
         <h3 className="display-5 text-center mb-3"> {data.tilda.mainTitle}</h3>
         <TablePrice data={data.tilda.dataService} />
       </div>
-      <div className="SMM mt-3">
+      <div className="additional_btn_wrapper">
+        <Link to="/additional">
+          <Button variant="outline-success">
+            <ExitToAppIcon style={{ marginRight: "0.5rem" }} />
+            {data.additionalBlock.additionalBtn}
+          </Button>
+        </Link>
+      </div>
+      {/* <div className="SMM mt-3">
         <h4 className="display-5 text-center mb-3 text-muted">
           {data.instagram.additionalServices}
         </h4>
@@ -27,7 +38,7 @@ const Service_price_main = ({ data, subTitle }) => {
           {data.instagram.mainTitle}
         </h3>
         <TablePrice data={data.instagram.dataService} />
-      </div>
+      </div> */}
     </>
   );
 };

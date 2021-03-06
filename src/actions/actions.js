@@ -5,4 +5,11 @@ const switchTheme = (theme) => {
   };
 };
 
-export { switchTheme };
+const openModalSlider = (imgs) => {
+  return {
+    type: "OPEN_MODAL_SLIDER",
+    payload: imgs,
+  };
+};
+
+export { switchTheme, openModalSlider };

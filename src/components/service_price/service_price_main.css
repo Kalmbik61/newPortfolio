@@ -5,6 +5,9 @@
 .service {
   font-size: 20px;
 }
+.additional_btn_wrapper {
+  text-align: center;
+}
 
 @media (max-width: 425px) {
   .price {

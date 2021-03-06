@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const About_head = ({ data }) => {
   const { title, subTitle, text, btns, logo } = data;
   return (
-    <div className="container">
+    <div className="container mb-4">
       <div className="row justify-content-center">
         <div className="descr col-md align-self-center">
           <h1>{title}</h1>

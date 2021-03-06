@@ -3,7 +3,7 @@ import PortfolioCard from "./portfolio-card";
 
 import "./portfolio-card.css";
 
-const Portfolio_main = ({ data }) => {
+const Portfolio_main = ({ data, takeImgs }) => {
   const [portfolio, setPortfolio] = useState([]);
   useEffect(() => {
     // сохраняем иммутабельность
@@ -23,6 +23,7 @@ const Portfolio_main = ({ data }) => {
             title={title}
             link={link}
             id={id}
+            takeImgs={takeImgs}
           />
         );
       })}

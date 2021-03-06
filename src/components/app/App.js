@@ -10,6 +10,8 @@ import Portfolio from "../pages/portfolio";
 import Service_page from "../pages/service_page";
 import Resume_page from "../pages/resume_page";
 import Contacts_page from "../pages/contacts_page";
+import AdditionalPage from "../pages/additionalPage";
+
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 // REDUX
 import { connect } from "react-redux";
@@ -56,14 +58,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App({ switchTheme, reducer, langReducer }) {
+  const { themePage } = reducer;
   const themeChanging = React.useMemo(
     () =>
       createMuiTheme({
         palette: {
-          type: reducer.themePage,
+          type: themePage,
         },
       }),
-    [reducer.themePage]
+    [themePage]
   );
 
   const classes = useStyles();
@@ -85,6 +88,7 @@ function App({ switchTheme, reducer, langReducer }) {
               <Route path="/service" component={Service_page} />
               <Route path="/resume" component={Resume_page} />
               <Route path="/contacts" component={Contacts_page} />
+              <Route path="/additional" component={AdditionalPage} />
             </Switch>
 
             <div className="text-center mt-5">

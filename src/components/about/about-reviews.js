@@ -6,7 +6,7 @@ import AboutReviewCard from "./about-review-card";
 
 import "./about-reviews.css";
 
-const About_rewiews = ({ data, imgs }) => {
+const About_rewiews = ({ data, imgs, close, modal, takeImgs }) => {
   const { title, portfolioBtn } = data;
   const [shortReviews, setShortReviews] = useState([]);
 
@@ -24,7 +24,9 @@ const About_rewiews = ({ data, imgs }) => {
       </div>
       <div className="reviews_wrapper row justify-content-around">
         {shortReviews.map((rev) => {
-          return <AboutReviewCard key={rev.id} data={rev} />;
+          return (
+            <AboutReviewCard key={rev.id} data={rev} takeImgs={takeImgs} />
+          );
         })}
       </div>
       <div className="btn_portfolio text-center">
