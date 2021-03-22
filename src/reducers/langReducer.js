@@ -1186,9 +1186,9 @@ const initialState = {
       title: "Covid-19 tracker",
       img: covid,
       id: 1,
-      descr: `  Covid-19 worldwide tracker. You may view the situation on the world
-  map and check how many people are sick, recovered and dead in the
-  world.`,
+      descr: `Covid-19 worldwide tracker. You may view the situation on the world
+              map and check how many people are sick, recovered and dead in the
+              world.`,
     },
   ],
 };
