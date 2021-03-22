@@ -1,5 +1,7 @@
 import logo from "../images/IMG_2158.jpeg";
 import tilda from "../images/logo_tilda_black.svg";
+import logoLight from "../images/logoLight.svg";
+import logoDark from "../images/logoDark.svg";
 
 //PORTFOLIO
 import l1 from "../images/laiswood/l1.png";
@@ -50,6 +52,8 @@ import a3 from "../images/ameli/a3.png";
 import w1 from "../images/wildberries/w1.png";
 import w2 from "../images/wildberries/w2.png";
 
+import covid from "../images/demo/covid/covid.png";
+
 const initialState = {
   lang: "RU",
   textRu: {
@@ -57,6 +61,8 @@ const initialState = {
       head: {
         subTitle:
           "Привет! Меня зовут Евгений. Я фронтенд разработчик. Добро пожаловать на мой сайт.",
+        logoDark,
+        logoLight,
         links: {
           git: "https://github.com/Kalmbik61",
           inst: "https://www.instagram.com/kalmbik61",
@@ -82,6 +88,12 @@ const initialState = {
           link: "Контакты",
           icon: "contacts",
           url: "/contacts",
+        },
+        {
+          id: 6,
+          link: "Live Demo",
+          icon: "developer",
+          url: "/demoPage",
         },
       ],
     },
@@ -1169,12 +1181,23 @@ const initialState = {
     },
   },
   modalSliderImgs: [],
+  demoPage: [
+    {
+      name: "Covid_tracker",
+      title: "Covid-19 tracker",
+      img: covid,
+      id: 1,
+      descr: `  Covid-19 worldwide tracker. You may view the situation on the world
+  map and check how many people are sick, recovered and dead in the
+  world.`,
+    },
+  ],
 };
 
 const langReducer = (state = initialState, action) => {
   switch (action.type) {
     case "OPEN_MODAL_SLIDER":
-      const copy = action.payload.slice();
+      const copy = [...action.payload];
       return {
         ...state,
         modalSliderImgs: [...copy],

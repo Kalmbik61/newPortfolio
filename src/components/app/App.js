@@ -1,17 +1,11 @@
 import React from "react";
+import Loader from "../loader/loader";
 import { Route, Switch } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import ScrollToTop from "../scrollToTop/scrollToTop";
 import Login from "../pages/login_page";
 import Dashbord from "../pages/dashbord";
-import About from "../pages/about";
-import Portfolio from "../pages/portfolio";
-import Service_page from "../pages/service_page";
-import Resume_page from "../pages/resume_page";
-import Contacts_page from "../pages/contacts_page";
-import AdditionalPage from "../pages/additionalPage";
-
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 // REDUX
 import { connect } from "react-redux";
@@ -20,8 +14,38 @@ import { switchTheme } from "../../actions/actions";
 import Context from "../../context/contex";
 import Service from "../../service/servise";
 
+// loadable component for lazy loading
+import loadable from "@loadable/component";
+
 import "./App.css";
 
+const About = loadable(() => import("../pages/about"), {
+  fallback: <Loader />,
+});
+const Portfolio = loadable(() => import("../pages/portfolio"), {
+  fallback: <Loader />,
+});
+const Service_page = loadable(() => import("../pages/service_page"), {
+  fallback: <Loader />,
+});
+const Resume_page = loadable(() => import("../pages/resume_page"), {
+  fallback: <Loader />,
+});
+const Contacts_page = loadable(() => import("../pages/contacts_page"), {
+  fallback: <Loader />,
+});
+const AdditionalPage = loadable(() => import("../pages/additionalPage"), {
+  fallback: <Loader />,
+});
+const DemoPage = loadable(() => import("../pages/demoPage"), {
+  fallback: <Loader />,
+});
+const CovidTracker = loadable(
+  () => import("../demoViewProjects/covidTracker/CovidTracker"),
+  {
+    fallback: <Loader />,
+  }
+);
 const servise = new Service();
 const drawerWidth = 240;
 
@@ -89,6 +113,8 @@ function App({ switchTheme, reducer, langReducer }) {
               <Route path="/resume" component={Resume_page} />
               <Route path="/contacts" component={Contacts_page} />
               <Route path="/additional" component={AdditionalPage} />
+              <Route path="/demoPage" component={DemoPage} />
+              <Route path="/:name" component={CovidTracker} />
             </Switch>
 
             <div className="text-center mt-5">

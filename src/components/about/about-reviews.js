@@ -16,7 +16,7 @@ const About_rewiews = ({ data, imgs, close, modal, takeImgs }) => {
     const reverse = reviews.reverse();
     const short = reverse.slice(0, 4);
     setShortReviews(short);
-  }, []);
+  }, [imgs]);
   return (
     <>
       <div className="mb-5">

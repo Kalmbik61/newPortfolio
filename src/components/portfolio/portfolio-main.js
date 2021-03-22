@@ -10,7 +10,7 @@ const Portfolio_main = ({ data, takeImgs }) => {
     const reviews = data.slice(0);
     const reverse = reviews.reverse();
     setPortfolio(reverse);
-  }, []);
+  }, [data]);
   return (
     <div className="container mt-5">
       {portfolio.map((item) => {

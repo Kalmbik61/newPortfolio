@@ -36,7 +36,7 @@ const About = ({ openModalSlider, langReducer }) => {
         takeImgs={takeImgs}
       />
       <Divider />
-      <About_howWorkDo data />
+      {/* <About_howWorkDo data /> */}
       <Divider />
       <ModalWrapper
         show={showModal}

@@ -9,6 +9,8 @@ import {
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ReactHtmlParser from "react-html-parser";
 
+import "./service_price_main.css";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
