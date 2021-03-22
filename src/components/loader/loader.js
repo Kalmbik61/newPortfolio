@@ -8,6 +8,7 @@ const Loader = () => {
         width: "100%",
         height: "100%",
         position: "absolute",
+        backgroundColor: "transparent",
       }}
     >
       <Spinner
