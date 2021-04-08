@@ -52,6 +52,11 @@ import a3 from "../images/ameli/a3.png";
 import w1 from "../images/wildberries/w1.png";
 import w2 from "../images/wildberries/w2.png";
 
+import cap1 from "../images/cappers/cap1.png";
+import cap2 from "../images/cappers/cap2.png";
+import cap3 from "../images/cappers/cap3.png";
+import cap4 from "../images/cappers/cap4.png";
+
 import covid from "../images/demo/covid/covid.png";
 
 const initialState = {
@@ -189,14 +194,6 @@ const initialState = {
         title: "Немного моих проектов",
         portfolioBtn: "Смотреть портфолио",
       },
-      // howIWork: {
-      //   title: "Как я работаю:",
-      //   howList: [{ id: 1, text: "111" }],
-      //   reviewsTextLink: {
-      //     text: "Если Вам нравится моя работа - оцените меня по данной",
-      //     revLink: "111",
-      //   },
-      // },
     },
     portfolio: {
       head: {
@@ -219,7 +216,7 @@ const initialState = {
             `Разработка кредитного калькулятора на Vanilla JS;`,
             `Сверстан с помощью Bulma.`,
           ],
-          link: "отсутствует или более недоступен",
+          link: "",
         },
         {
           imgs: [
@@ -290,7 +287,7 @@ const initialState = {
             `Создан instagram-аккаунт и аккаунт в Faсebook;`,
             `Ведение магазина, instagram-аккаунта и настройка рекламы в течении 2 месяцев;`,
           ],
-          link: "отсутствует или более недоступен",
+          link: "",
         },
         {
           imgs: [
@@ -318,7 +315,7 @@ const initialState = {
             `Сверстан в соответствии с макетом из Figma;`,
             `Заказчику переданы все исходники сайта вместе со всеми зависимостями.`,
           ],
-          link: "отсутствует или более недоступен",
+          link: "",
         },
         {
           imgs: [
@@ -370,7 +367,7 @@ const initialState = {
             `Разработан в рамках обучающего проекта с применением React.js и Ferch API;`,
             `В работе использован сервис "API of Ice And Fire".`,
           ],
-          link: "отсутствует или более недоступен",
+          link: "",
         },
         {
           imgs: [
@@ -472,7 +469,37 @@ const initialState = {
             `Прописана логика на Vanilla Js;`,
             `Расширение дорабатывается и будет переписываться на React.js;`,
           ],
-          link: "отсутствует или более недоступен",
+          link: "",
+        },
+        {
+          imgs: [
+            {
+              img: cap1,
+              id: "cap1",
+            },
+            {
+              img: cap2,
+              id: "cap2",
+            },
+            {
+              img: cap3,
+              id: "cap3",
+            },
+            {
+              img: cap4,
+              id: "cap4",
+            },
+          ],
+          id: 1290342,
+          title: "Сайт букмекерских услуг Cappers Free на React.js",
+          text: [
+            `Разработан сайт с учетом потребности клиента на React.js`,
+            `Дизайн сайта полностью соответствует требованию клиента об использовании темных "ноток". А отличительной чертой 
+            сайта является использование "неоновых" стилей`,
+            `Подключены ADS сервисы для повышения трафика. Реклама настроена на жителей USA`,
+            `Разработан именно на React , так как клиент собирается расширять функционал по типу SPA`,
+          ],
+          link: "cappers-free.com",
         },
       ],
     },
@@ -1182,7 +1209,7 @@ const initialState = {
   modalSliderImgs: [],
   demoPage: [
     {
-      name: "Covid_tracker",
+      name: "CovidTracker",
       title: "Covid-19 tracker",
       img: covid,
       id: 1,

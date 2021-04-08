@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import Portfolio_header from "../portfolio/portfolio-header";
 import Portfolio_main from "../portfolio/portfolio-main";
 import Divider from "@material-ui/core/Divider";
@@ -9,7 +9,14 @@ import Context from "../../context/contex";
 import { connect } from "react-redux";
 import { openModalSlider } from "../../actions/actions";
 
+//analytics
+import { firebaseAnalitics } from "../../firebaseConfig";
+
 const Portfolio = ({ openModalSlider, langReducer }) => {
+  useEffect(() => {
+    firebaseAnalitics.logEvent("portfolioPage_visited");
+  }, []);
+
   const { textRu } = useContext(Context);
 
   const [showModal, setShowModal] = useState(false);

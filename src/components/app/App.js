@@ -1,12 +1,13 @@
-import React from "react";
+import { useEffect, useMemo } from "react";
 import Loader from "../loader/loader";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useRouteMatch } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import ScrollToTop from "../scrollToTop/scrollToTop";
 import Login from "../pages/login_page";
 import Dashbord from "../pages/dashbord";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import Error from "../../errors/Error";
 // REDUX
 import { connect } from "react-redux";
 import { switchTheme } from "../../actions/actions";
@@ -83,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
 
 function App({ switchTheme, reducer, langReducer }) {
   const { themePage } = reducer;
-  const themeChanging = React.useMemo(
+  const themeChanging = useMemo(
     () =>
       createMuiTheme({
         palette: {
@@ -95,6 +96,10 @@ function App({ switchTheme, reducer, langReducer }) {
 
   const classes = useStyles();
   const theme = useTheme();
+
+  //router
+  const match = useRouteMatch("/CovidTracker");
+  const matching = match && match.isExact;
 
   return (
     <Context.Provider value={langReducer}>
@@ -114,7 +119,9 @@ function App({ switchTheme, reducer, langReducer }) {
               <Route path="/contacts" component={Contacts_page} />
               <Route path="/additional" component={AdditionalPage} />
               <Route path="/demoPage" component={DemoPage} />
-              <Route path="/:name" component={CovidTracker} />
+              {matching && <Route path="/:name" component={CovidTracker} />}
+
+              <Route path="/*" component={Error} />
             </Switch>
 
             <div className="text-center mt-5">

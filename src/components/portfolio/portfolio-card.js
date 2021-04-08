@@ -32,7 +32,11 @@ export default function PortfolioCard({
           <p className="card-text">
             <small className="text-muted font-weight-bold"> Website: </small>
             <small className="text-muted">
-              <a href={link}>{link}</a>
+              {link.length ? (
+                <a href={link}>{link}</a>
+              ) : (
+                "отсутствует или более недоступен"
+              )}
             </small>
           </p>
         </div>

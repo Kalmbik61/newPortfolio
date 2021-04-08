@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import NoteIcon from "@material-ui/icons/Note";
@@ -7,7 +7,13 @@ import DemoCard from "../demoViewProjects/DemoCard";
 
 import Contex from "../../context/contex";
 
+//analytics
+import { firebaseAnalitics } from "../../firebaseConfig";
+
 const DemoPage = () => {
+  useEffect(() => {
+    firebaseAnalitics.logEvent("additionalServices_vicited");
+  }, []);
   const { demoPage } = useContext(Contex);
   return (
     <div>

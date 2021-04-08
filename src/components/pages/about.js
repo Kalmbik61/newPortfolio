@@ -1,8 +1,7 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import About_head from "../about/about-head";
 import About_main from "../about/about-main";
 import About_reviews from "../about/about-reviews";
-import About_howWorkDo from "../about/about-howWorkDo";
 import Divider from "@material-ui/core/Divider";
 import ModalWrapper from "../modalCarousel/ModalWrapper";
 
@@ -10,6 +9,9 @@ import { connect } from "react-redux";
 import { openModalSlider } from "../../actions/actions";
 
 import Context from "../../context/contex";
+
+//analytics
+import { firebaseAnalitics } from "../../firebaseConfig";
 
 const About = ({ openModalSlider, langReducer }) => {
   const { textRu } = useContext(Context);
@@ -23,6 +25,11 @@ const About = ({ openModalSlider, langReducer }) => {
     openModalSlider(imgs);
     setShowModal((prev) => !prev);
   };
+
+  //analytics
+  useEffect(() => {
+    firebaseAnalitics.logEvent("homepage_visited");
+  }, []);
 
   return (
     <div className="container" style={{ position: "relative" }}>
