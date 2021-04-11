@@ -1,61 +1,61 @@
-import logo from "../images/IMG_2158.jpeg";
+import logo from "../images/IMG_2158.webp";
 import tilda from "../images/logo_tilda_black.svg";
 import logoLight from "../images/logoLight.svg";
 import logoDark from "../images/logoDark.svg";
 
 //PORTFOLIO
-import l1 from "../images/laiswood/l1.png";
-import l2 from "../images/laiswood/l2.png";
-import l3 from "../images/laiswood/l3.png";
-import l4 from "../images/laiswood/l4.png";
-import l5 from "../images/laiswood/laiswood.png";
+import l1 from "../images/laiswood/l1.webp";
+import l2 from "../images/laiswood/l2.webp";
+import l3 from "../images/laiswood/l3.webp";
+import l4 from "../images/laiswood/l4.webp";
+import l5 from "../images/laiswood/laiswood.webp";
 
 import creditCalc from "../images/credit.png";
 
-import dat1 from "../images/dattebayo/d1.png";
-import dat2 from "../images/dattebayo/d2.png";
-import dat3 from "../images/dattebayo/d3.png";
-import dat4 from "../images/dattebayo/d4.png";
-import dat5 from "../images/dattebayo/d5.png";
-import dat from "../images/dattebayo/dattebayo.png";
+import dat1 from "../images/dattebayo/d1.webp";
+import dat2 from "../images/dattebayo/d2.webp";
+import dat3 from "../images/dattebayo/d3.webp";
+import dat4 from "../images/dattebayo/d4.webp";
+import dat5 from "../images/dattebayo/d5.webp";
+import dat from "../images/dattebayo/dattebayo.webp";
 
-import sochi1 from "../images/sochi/s1.png";
-import sochi2 from "../images/sochi/s2.png";
-import sochi3 from "../images/sochi/s3.png";
-import sochi4 from "../images/sochi/s4.png";
+import sochi1 from "../images/sochi/s1.webp";
+import sochi2 from "../images/sochi/s2.webp";
+import sochi3 from "../images/sochi/s3.webp";
+import sochi4 from "../images/sochi/s4.webp";
 
-import cyber from "../images/cyber/cyber.png";
-import cyber1 from "../images/cyber/ca1.png";
-import cyber2 from "../images/cyber/ca2.png";
-import cyber3 from "../images/cyber/ca3.png";
-import cyber4 from "../images/cyber/ca4.png";
+import cyber from "../images/cyber/cyber.webp";
+import cyber1 from "../images/cyber/ca1.webp";
+import cyber2 from "../images/cyber/ca2.webp";
+import cyber3 from "../images/cyber/ca3.webp";
+import cyber4 from "../images/cyber/ca4.webp";
 
-import got from "../images/got/got2.png";
-import got1 from "../images/got/got3.png";
+import got from "../images/got/got2.webp";
+import got1 from "../images/got/got3.webp";
 
-import timber from "../images/timber/timber.png";
-import tim1 from "../images/timber/tim1.png";
-import tim2 from "../images/timber/tim2.png";
-import tim3 from "../images/timber/tim3.png";
-import tim4 from "../images/timber/tim4.png";
-import tim5 from "../images/timber/tim5.png";
-import tim6 from "../images/timber/tim6.png";
-import tim7 from "../images/timber/tim7.png";
-import tim8 from "../images/timber/tim8.png";
-import tim9 from "../images/timber/tim9.png";
+import timber from "../images/timber/timber.webp";
+import tim1 from "../images/timber/tim1.webp";
+import tim2 from "../images/timber/tim2.webp";
+import tim3 from "../images/timber/tim3.webp";
+import tim4 from "../images/timber/tim4.webp";
+import tim5 from "../images/timber/tim5.webp";
+import tim6 from "../images/timber/tim6.webp";
+import tim7 from "../images/timber/tim7.webp";
+import tim8 from "../images/timber/tim8.webp";
+import tim9 from "../images/timber/tim9.webp";
 
-import ameli from "../images/ameli/ameli.png";
-import a1 from "../images/ameli/a1.png";
-import a2 from "../images/ameli/a2.png";
-import a3 from "../images/ameli/a3.png";
+import ameli from "../images/ameli/ameli.webp";
+import a1 from "../images/ameli/a1.webp";
+import a2 from "../images/ameli/a2.webp";
+import a3 from "../images/ameli/a3.webp";
 
-import w1 from "../images/wildberries/w1.png";
-import w2 from "../images/wildberries/w2.png";
+import w1 from "../images/wildberries/w1.webp";
+import w2 from "../images/wildberries/w2.webp";
 
-import cap1 from "../images/cappers/cap1.png";
-import cap2 from "../images/cappers/cap2.png";
-import cap3 from "../images/cappers/cap3.png";
-import cap4 from "../images/cappers/cap4.png";
+import cap1 from "../images/cappers/cap1.webp";
+import cap2 from "../images/cappers/cap2.webp";
+import cap3 from "../images/cappers/cap3.webp";
+import cap4 from "../images/cappers/cap4.webp";
 
 import covid from "../images/demo/covid/covid.png";
 

@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import Loader from "../loader/loader";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";

@@ -1,16 +1,7 @@
 import React from "react";
-import Context from "../../context/contex";
 
-const withLanguage = () => (Wrapped) => {
-  return (props) => {
-    return (
-      <Context.Consumer>
-        {(language) => {
-          return <Wrapped {...props} language={language} />;
-        }}
-      </Context.Consumer>
-    );
-  };
+const withLanguage = () => {
+  return <div>HOC</div>;
 };
 
 export default withLanguage;

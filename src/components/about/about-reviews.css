@@ -1,9 +1,15 @@
+.card_wrapper {
+  transition: ease 0.4s;
+}
+
 .card-list {
   margin-bottom: 1rem;
 }
-
 .btn_portfolio {
   margin: 3rem;
+}
+.card_img {
+  cursor: pointer;
 }
 .card_img img {
   width: 100%;

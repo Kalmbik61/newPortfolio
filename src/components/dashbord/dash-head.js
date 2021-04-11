@@ -13,11 +13,12 @@ const Dash_head = () => {
     <>
       <div className="text-center">
         <img
-          src={
-            localStorage.getItem("theme") === "light"
-              ? textRu.dashbord.head.logoLight
-              : textRu.dashbord.head.logoDark
-          }
+          // src={
+          //   localStorage.getItem("theme") === "light"
+          //     ? textRu.dashbord.head.logoLight
+          //     : textRu.dashbord.head.logoDark
+          // }
+          src={textRu.dashbord.head.logoDark}
           alt="logo"
           style={{ margin: 0, width: 100 }}
         />

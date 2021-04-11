@@ -6,7 +6,7 @@ import AboutReviewCard from "./about-review-card";
 
 import "./about-reviews.css";
 
-const About_rewiews = ({ data, imgs, close, modal, takeImgs }) => {
+const About_rewiews = ({ data, imgs, takeImgs }) => {
   const { title, portfolioBtn } = data;
   const [shortReviews, setShortReviews] = useState([]);
 
