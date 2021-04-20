@@ -12,3 +12,4 @@ export const firebaseConfig = {
 };
 firebaseApp.initializeApp(firebaseConfig);
 export const firebaseAnalitics = firebase.analytics();
+export const firebaseDb = firebaseApp.firestore();

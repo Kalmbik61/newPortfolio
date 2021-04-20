@@ -15,7 +15,7 @@ function Resume_page() {
   }, []);
   return (
     <div className="container">
-      <Resume_head data={textRu.resume.head.title} />
+      <Resume_head data={textRu.resume} />
       <Divider />
       <Resume_main data={textRu.resume.body} />
     </div>

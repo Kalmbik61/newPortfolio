@@ -2,7 +2,7 @@ import "./error.css";
 const Error = () => {
   return (
     <div>
-      <a href="https://evdev-portfolio.web.app/" target="_blank">
+      <a href="/" target="_blank">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-12 mt-5 mb-5">

@@ -16,6 +16,7 @@ const Resume_main = ({ data }) => {
       <div className="text-center text-secondary pt-3">
         {ReactHtmlParser(small)}
       </div>
+
       <div className="shadow-lg container mt-3 p-4">
         <div className="head m-3">
           <div className="row align-items-center ">

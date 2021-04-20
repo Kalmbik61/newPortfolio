@@ -18,7 +18,7 @@ const Dash_head = () => {
           //     ? textRu.dashbord.head.logoLight
           //     : textRu.dashbord.head.logoDark
           // }
-          src={textRu.dashbord.head.logoDark}
+          src={textRu.dashbord.head.logoLight}
           alt="logo"
           style={{ margin: 0, width: 100 }}
         />
