@@ -2,7 +2,8 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import { Link } from "react-router-dom";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./demoCard.css";
 const DemoCard = ({ title, descr, name, img }) => {
   return (
@@ -14,7 +15,8 @@ const DemoCard = ({ title, descr, name, img }) => {
         <p>{descr}</p>
       </div>
       <div className="card_img_wrapper">
-        <img src={img} alt={name} />
+        <LazyLoadImage effect="blur" src={img} alt={name} />
+        {/* <img src={img} alt={name} /> */}
       </div>
       <div className="card_btn_wrapper mt-3 mb-3">
         <Link to={`/${name}`}>

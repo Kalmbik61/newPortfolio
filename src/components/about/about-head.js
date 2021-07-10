@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import NoteIcon from "@material-ui/icons/Note";
 import { Link } from "react-router-dom";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const About_head = ({ data }) => {
   const { title, subTitle, text, btns, logo } = data;
   return (
@@ -29,7 +29,14 @@ const About_head = ({ data }) => {
           </div>
         </div>
         <div className="image col-md text-center p-3">
-          <img src={logo} alt="logo" style={{ width: 200, height: 300 }} />
+          <LazyLoadImage
+            effect="blur"
+            src={logo}
+            alt="logo"
+            width={200}
+            height={300}
+          />
+          {/* <img src={logo} alt="logo" style={{ width: 200, height: 300 }} /> */}
         </div>
       </div>
     </div>

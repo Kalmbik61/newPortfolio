@@ -19,7 +19,21 @@
 .interests_list ul li {
   color: inherit;
 }
-
+.section-title:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background: #54b689;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.section-title {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #54b689;
+}
 @media (max-width: 768px) {
   .list-unstyled li {
     font-size: 10px !important;

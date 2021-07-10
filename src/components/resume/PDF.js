@@ -74,10 +74,16 @@ const PDF = () => {
   const data = [
     {
       id: 1,
+      title: "Working in a development team as a frontend developer",
+      descr: `Development and support of projects related to blockchain and interaction with decentralized contracts through metamask`,
+      date: " Freelance | April 2021 - present",
+    },
+    {
+      id: 1675854,
       title: "Freelance",
       descr: ` Refinement, editing, bug fixes and addition of new features on
       various sites / extensions on freelance`,
-      date: " Freelance | May 2020 - present",
+      date: " Freelance | October 2020 - April 2021",
     },
     {
       id: 2,
