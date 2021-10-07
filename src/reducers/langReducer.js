@@ -59,6 +59,29 @@ import cap4 from "../images/cappers/cap4.webp";
 
 import covid from "../images/demo/covid/covid.png";
 
+import g1 from "../images/godtemple/g1.png";
+import g2 from "../images/godtemple/g2.png";
+import g3 from "../images/godtemple/g3.png";
+import g4 from "../images/godtemple/g4.png";
+
+import dgcl1 from "../images/dgcl/dgcl1.png";
+import dgcl2 from "../images/dgcl/dgcl2.png";
+import dgcl3 from "../images/dgcl/dgcl3.png";
+import dgcl4 from "../images/dgcl/dgcl4.png";
+import dgcl5 from "../images/dgcl/dgcl5.png";
+import dgcl6 from "../images/dgcl/dgcl6.png";
+
+import box1 from "../images/box/box1.png";
+import box2 from "../images/box/box2.png";
+import box3 from "../images/box/box3.png";
+import box4 from "../images/box/box4.png";
+import box5 from "../images/box/box5.png";
+import box6 from "../images/box/box6.png";
+
+import p1 from "../images/plug/ex1.png";
+import p2 from "../images/plug/ex2.png";
+import p3 from "../images/plug/ex3.png";
+
 const initialState = {
   lang: "RU",
   textRu: {
@@ -212,10 +235,7 @@ const initialState = {
           ],
           id: 134535,
           title: "Credit Calculator",
-          text: [
-            `Разработка кредитного калькулятора на Vanilla JS;`,
-            `Сверстан с помощью Bulma.`,
-          ],
+          text: [`Разработка кредитного калькулятора на Vanilla JS;`, `Сверстан с помощью Bulma.`],
           link: "",
         },
         {
@@ -442,8 +462,7 @@ const initialState = {
             },
           ],
           id: 1203435,
-          title:
-            "Изменение стандартной работы корзины и карточек товара в Tilda",
+          title: "Изменение стандартной работы корзины и карточек товара в Tilda",
           text: [
             `В интернет-магазина на платформе Tilda добавлен JS код, который добавляет "см" и крастность при 
             увеличении количества товара;`,
@@ -500,6 +519,130 @@ const initialState = {
             `Разработан именно на React , так как клиент собирается расширять функционал по типу SPA`,
           ],
           link: "https://cappers-free.com",
+        },
+        {
+          imgs: [
+            {
+              img: g1,
+              id: "g1",
+            },
+            {
+              img: g2,
+              id: "g2",
+            },
+            {
+              img: g3,
+              id: "g3",
+            },
+            {
+              img: g4,
+              id: "g4",
+            },
+          ],
+          id: 24353232323223,
+          title: "Сайт-сервис по получению NFT токенов или койнов в сети Etherium на React.js",
+          text: [
+            `Сайт для получения внутренней валюты ( в сети Etherium )`,
+            `В дальнейшем переработан будет в маркетплейс по продаже и покупке NFT токенов`,
+          ],
+          link: "https://www.godtemple.io/",
+        },
+        {
+          imgs: [
+            {
+              img: dgcl1,
+              id: "dgcl1",
+            },
+            {
+              img: dgcl2,
+              id: "dgcl2",
+            },
+            {
+              img: dgcl3,
+              id: "dgcl3",
+            },
+            {
+              img: dgcl4,
+              id: "dgcl4",
+            },
+            {
+              img: dgcl5,
+              id: "dgcl5",
+            },
+            {
+              img: dgcl6,
+              id: "dgcl6",
+            },
+          ],
+          id: 134598465132,
+          title: "Маркетплейс для продажи NFT-токенов на React.js",
+          text: [
+            `Принимал участие в доработке маркетплейса по продаже NFT-токенов`,
+            `Проект дорабатывается, в него добавляются новые фичи`,
+            `Любой желающий может попробовать продать любой NFT-токен за USDt, DGCL или ETH`,
+          ],
+          link: "https://digicol.io/",
+        },
+        {
+          imgs: [
+            {
+              img: box1,
+              id: "box1",
+            },
+            {
+              img: box2,
+              id: "box2",
+            },
+            {
+              img: box3,
+              id: "box3",
+            },
+            {
+              img: box4,
+              id: "box4",
+            },
+            {
+              img: box5,
+              id: "box5",
+            },
+            {
+              img: box6,
+              id: "box6",
+            },
+          ],
+          id: 12340798465132,
+          title: "Футуристичный сайт с анимацией lottie.js на React.js",
+          text: [
+            `Проект - резентация новых возможностей в сети и всем, что может быть важно в наше время!`,
+            `Сайт собран и разбит на множетсво компонентов, которые позволяют динамически добавлять в него новый контент`,
+            `А так же, добавлена админка через Firebase для новых новостей ( удаление старых ) и для добавления FAQ.`,
+          ],
+          link: "https://tlsbox.com/",
+        },
+        {
+          imgs: [
+            {
+              img: p1,
+              id: "p1",
+            },
+            {
+              img: p2,
+              id: "p2",
+            },
+            {
+              img: p3,
+              id: "p3",
+            },
+          ],
+          id: 7007644343,
+          title: "Глубокий VPN сервис для Google chrome",
+          text: [
+            `Данное расширение позволяет скрыть не только ваш IP адрес, но и время/язык/геолокацию/браузер/операционную систему`,
+            `В данном проекте идет максимально тесная работа с сервером, так как все данные подгружаются через сервер не только в расширение, но и на специальный сайт-пульт`,
+            `Работа выстроенна по модели MVC`,
+            `Проект пересобран на webpack`,
+          ],
+          link: "https://panel.dslrentals.com",
         },
       ],
     },
@@ -909,8 +1052,8 @@ const initialState = {
           contacts: [
             {
               id: 1,
-              cont: "7-961-300-14-49",
-              link: "+79613001449",
+              cont: "+7 (995) 398-87-35",
+              link: "+79953988735",
               icon: "phone",
             },
             {
@@ -938,12 +1081,11 @@ const initialState = {
           exp: [
             {
               id: 8756473,
-              title:
-                "Работа в команде разработчиков в качестве Frontend-разработчика",
+              title: "Работа в команде разработчиков в качестве Frontend-разработчика",
               date_from: "Апрель 2021",
               date_to: "по настоящее время",
               work_type: "Фриланс/ИП",
-              about: `Разработка и поддержка проектов, связаных с блокчейном и взаимодействием с децентрализованными контрактами через метамаск.`,
+              about: `Разработка и поддержка проектов, связаных с блокчейном и взаимодействием с децентрализованными контрактами через метамаск. А так же другими проектами. Преимущественно, работа строится на использовании React/Redux/Redux-thunk/NEXT.js с глубоким взаимодействием с сервером.`,
             },
             {
               id: 1,
@@ -968,8 +1110,7 @@ const initialState = {
             },
             {
               id: 908035,
-              title:
-                "Сайт для компании по ремонту и дизайну квартир и домов на платформе Tilda",
+              title: "Сайт для компании по ремонту и дизайну квартир и домов на платформе Tilda",
               date_from: "Апрель 2021",
               date_to: "Апрель 2021",
               work_type: "Фриланс",
@@ -1000,8 +1141,7 @@ const initialState = {
             },
             {
               id: 86776,
-              title:
-                "Изменение стандартной работы корзины и карточек товара в Tilda",
+              title: "Изменение стандартной работы корзины и карточек товара в Tilda",
               date_from: "Декабрь 2020",
               date_to: "Декабрь 2020",
               work_type: "Фриланс",
@@ -1076,23 +1216,23 @@ const initialState = {
               },
               {
                 id: 2,
-                skill: "React/ReactRouter/Redux",
+                skill: "React.js",
               },
               {
                 id: 3,
-                skill: "Vue (знакомство)",
+                skill: "Redux/Redux-thunk",
               },
               {
                 id: 4,
-                skill: "PHP (знакомство)",
+                skill: "NEXT.js",
               },
               {
                 id: 5,
-                skill: "HTML/CSS",
+                skill: "HTML/CSS/SCSS",
               },
               {
                 id: 6,
-                skill: "Bootstrap/Bulma/Materialize UI",
+                skill: "Bootstrap/Bulma/Material UI",
               },
               {
                 id: 7,
@@ -1194,8 +1334,7 @@ const initialState = {
         >
           kalmbik61@gmail.com
         </a> 
-        или связаться другим удобным для Вас способом! А так же
-        воспользоваться формой ниже и я Вам перезвоню (напишу).`,
+        или связаться другим удобным для Вас способом! `,
         whats: "https://wa.me/79613001449",
         telegram: "https://teleg.run/kalmbik61",
       },

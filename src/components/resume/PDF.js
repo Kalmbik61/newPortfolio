@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Page,
-  Text,
-  View,
-  Document,
-  Image,
-  StyleSheet,
-} from "@react-pdf/renderer";
+import { Page, Text, View, Document, Image, StyleSheet } from "@react-pdf/renderer";
 const PDF = () => {
   const styles = StyleSheet.create({
     page: {
@@ -99,8 +92,7 @@ const PDF = () => {
     },
     {
       id: 34,
-      title:
-        "Creating website for the repair and design of apartment and houses",
+      title: "Creating website for the repair and design of apartment and houses",
       descr: `A website for the repair and design of apartments was developed and assembled on the Tilda platform. 
       The site meets all the requirements of the customer. It is simple and intuitive for customers.`,
       date: " Freelance | April 2021 - April 2021",
@@ -124,8 +116,7 @@ const PDF = () => {
     },
     {
       id: 4,
-      title:
-        "Changing the standard work of the cart and product cards in Tilda",
+      title: "Changing the standard work of the cart and product cards in Tilda",
       descr: `  Changed the multiplicity of products, the step of adding an item to the cart and adding the "cm" inscription 
       by adding third-party code to Vanilla JS.`,
       date: "Freelance | January 2021 - January 2021",
@@ -189,19 +180,23 @@ const PDF = () => {
         },
         {
           id: 3,
-          text: "Vue (acquaintance)",
+          text: "React.js",
         },
         {
           id: 4,
-          text: "PHP (acquaintance)",
+          text: "Redux/Redux-thunk",
+        },
+        {
+          id: 423452345,
+          skill: "NEXT.js",
         },
         {
           id: 5,
-          text: "HTML/CSS",
+          text: "HTML/CSS/SCSS",
         },
         {
           id: 6,
-          text: "Bootstrap/Bulma/Materialize UI",
+          text: "Bootstrap/Bulma/Material UI",
         },
         {
           id: 7,
@@ -291,7 +286,7 @@ const PDF = () => {
   };
   return (
     <Document>
-      <Page size="A4" style={styles.page}>
+      <Page size='A4' style={styles.page}>
         <View style={styles.head}>
           <View>
             <Text style={styles.fonts.title}>Pereverzev Evgeniy</Text>
@@ -344,9 +339,7 @@ const PDF = () => {
             {skills.tech.data.map(({ id, text }) => {
               return (
                 <View key={id} style={{ matginTop: 20 }}>
-                  <Text style={{ fontSize: 14, color: "grey", margin: 2 }}>
-                    {text}
-                  </Text>
+                  <Text style={{ fontSize: 14, color: "grey", margin: 2 }}>{text}</Text>
                 </View>
               );
             })}
@@ -364,9 +357,7 @@ const PDF = () => {
             {skills.soft.data.map(({ id, text }) => {
               return (
                 <View key={id} style={{ matginTop: 20 }}>
-                  <Text style={{ fontSize: 14, color: "grey", margin: 2 }}>
-                    {text}
-                  </Text>
+                  <Text style={{ fontSize: 14, color: "grey", margin: 2 }}>{text}</Text>
                 </View>
               );
             })}
@@ -384,9 +375,7 @@ const PDF = () => {
             {skills.lang.data.map(({ id, text }) => {
               return (
                 <View key={id} style={{ matginTop: 20 }}>
-                  <Text style={{ fontSize: 14, color: "grey", margin: 2 }}>
-                    {text}
-                  </Text>
+                  <Text style={{ fontSize: 14, color: "grey", margin: 2 }}>{text}</Text>
                 </View>
               );
             })}
@@ -404,9 +393,7 @@ const PDF = () => {
             {skills.hobbies.data.map(({ id, text }) => {
               return (
                 <View key={id} style={{ matginTop: 20 }}>
-                  <Text style={{ fontSize: 14, color: "grey", margin: 2 }}>
-                    {text}
-                  </Text>
+                  <Text style={{ fontSize: 14, color: "grey", margin: 2 }}>{text}</Text>
                 </View>
               );
             })}

@@ -13,10 +13,10 @@ const Contacts_page = () => {
     firebaseAnalitics.logEvent("contactsPage_visited");
   }, []);
   return (
-    <div className="container">
+    <div className='container'>
       <Contacts_head data={textRu.contacts.head} />
-      <Divider />
-      <Contacts_main data={textRu.contacts.body} />
+      {/* <Divider />
+      <Contacts_main data={textRu.contacts.body} /> */}
     </div>
   );
 };
